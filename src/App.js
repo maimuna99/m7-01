@@ -57,7 +57,7 @@ function App() {
           </div>
         ))}
       </ul> */}
-      <Products />
+      <Products products={products} />
     </div>
   );
 }
