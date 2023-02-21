@@ -9,6 +9,7 @@ export default function Products({ products }) {
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Electronic Shop
           </h2>
+          <p>Click on product to view the details</p>
 
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
