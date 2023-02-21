@@ -33,30 +33,6 @@ const products = [
 function App() {
   return (
     <div className="App">
-      {/* <h1>React Exercise 1</h1>
-<ul>
-<li>Render a list of products from the array above</li>
-<li>
-  When a product is clicked it should `alert()` the title of the
-  product.
-</li>
-<li>Create a component</li>
-</ul> */}
-      {/* {function myFunction() {
-        alert("I am an alert box!");
-      }}
-      <ul>
-        {products.map((product) => (
-          <div onClick={() => alert(`${product.title}`)}>
-            <li key={product.id}>
-              {product.title}
-              <br />
-              {product.description}
-              <img src={product.thumbnail} alt={product.title} />
-            </li>
-          </div>
-        ))}
-      </ul> */}
       <Products products={products} />
     </div>
   );

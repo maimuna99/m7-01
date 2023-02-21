@@ -2,7 +2,6 @@ import React from "react";
 // import product from "./product";
 
 export default function Products({ products }) {
-  // const products = products;
   return (
     <>
       <div className="bg-white">
@@ -14,6 +13,7 @@ export default function Products({ products }) {
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
               <div
+                onClick={() => alert(`${product.title}`)}
                 key={product.id}
                 product={product}
                 className="group relative"
@@ -26,19 +26,12 @@ export default function Products({ products }) {
                   />
                 </div>
                 <div className="mt-4 flex justify-between">
-                  {/* <div>
-                    <h3 className="text-sm text-gray-700">
-                      <a href={product.href}>
-                        <span aria-hidden="true" className="absolute inset-0" />
-                        {product.name}
-                      </a>
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-500">
-                      {product.color}
-                    </p>
-                  </div> */}
                   <p className="text-sm font-medium text-gray-900">
                     {product.title}
+                  </p>
+                  <br />
+                  <p className="mt-1 text-sm text-gray-500">
+                    {product.description}
                   </p>
                 </div>
               </div>
@@ -46,9 +39,6 @@ export default function Products({ products }) {
           </div>
         </div>
       </div>
-      {/* {products.map((product, i) => (
-        <product key={i} product={product} />
-      ))} */}
     </>
   );
 }
