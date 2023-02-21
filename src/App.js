@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Products from "./Products";
 const products = [
   {
     id: 1,
@@ -42,7 +42,7 @@ function App() {
 </li>
 <li>Create a component</li>
 </ul> */}
-      {function myFunction() {
+      {/* {function myFunction() {
         alert("I am an alert box!");
       }}
       <ul>
@@ -56,7 +56,8 @@ function App() {
             </li>
           </div>
         ))}
-      </ul>
+      </ul> */}
+      <Products />
     </div>
   );
 }
